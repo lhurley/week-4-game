@@ -1,0 +1,104 @@
+/* page layout */
+#container-fluid {
+	width: 75%;
+	height: 90%px;
+	padding-left: 25%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+body {
+	background-image: url("../images/background.png");
+	background-size: 200%;
+}
+
+/* interactive image base */
+.imgoverlay {
+    position: relative;
+    max-width: 900px;
+}
+
+#img4{
+	position: fixed;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+}
+
+#img3{
+	display: none;
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left:0;
+	right:0;
+}
+
+#img2{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left:0;
+	right:0;
+}
+
+#img1{
+	position: fixed;
+    bottom: 0;
+    top:0;
+    left:0;
+	right:0;
+}
+
+
+#wrapper {
+	width: 100%
+	max-width:960px;
+	margin: 0 auto;
+}
+
+#nav1
+{  
+    background-color:#F00; /*whichever you want*/
+    opacity: 0.5; 
+    filter:(opacity=50);       
+}
+
+.center-block {
+	margin-top: -40pt;
+}
+
+
+/*Targeting Tablets and desktop*/
+@media only screen and (min-width: 768px){
+	body{
+		background-image:url("../images/background.png");
+			width: auto;
+			height: auto;
+			margin: 1px;
+			padding: 10px;
+		}
+	
+/*Targetting phones */
+@media only screen and (max-width: 767px){
+	body{
+		background-image: url("../images/background.png");
+			width: auto;
+			height: auto;
+			margin: 1px;
+			padding: 10px;
+		}
+		}
+
+/*portraint phones*/
+@media only screen(max-width: 767px) and (orientation: portrait){
+	body{
+		background-image: url("../images/background.png");
+			width: auto;
+			height: auto;
+			margin: 1px;
+			padding: 10px;
+	}
+	

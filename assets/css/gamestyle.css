@@ -1,0 +1,131 @@
+/* page layout1 */
+#container-fluid {
+	padding-left: 25%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+body {
+	background-image: url("../images/background2.png");
+	background-size: 200%;
+}
+
+/* Number to Guess/Guesses/Scoreboard */
+#guessingNumber {
+	background-color: white;
+	border: solid 3px;
+	border-color: black;
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+#scoreboard {
+	background-color: #f9323c;
+	display: inline-block;
+	padding: 15px 20px 10px 15px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+
+#totalScore {
+	margin-bottom: 50px;
+}
+
+#yts {
+	background-color: white;
+	border: solid 2px;
+	border-color: black;
+	display: inline;
+	padding: 20px;
+}
+
+/* dragonEgg images */
+#dragonEggs {
+	position: fixed;
+	bottom:0;
+	top:0;
+	left:40em;
+	right:0;
+}
+
+img{
+	width: 100pt;
+}
+
+.imgoverlay {
+    position: relative;
+    max-width: 900px;
+}
+
+#img4 {
+	position: fixed;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+}
+
+#img3{
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left:0;
+	right:0;
+}
+
+#img2 {
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left:0;
+	right:0;
+}
+
+#img1 {
+	position: fixed;
+    bottom: 0;
+    top:0;
+    left:0;
+	right:0;
+}
+
+.center-block {
+	margin-top: 20em;
+    position: relative;
+    max-width: 500px;
+}
+
+/*Targeting Tablets and desktop*/
+@media only screen and (min-width: 768px){
+	body{
+		background-image:url("../images/background2.png");
+			width: auto;
+			height: auto;
+			margin: 1px;
+			padding: 10px;
+		}
+	
+/*Targetting phones */
+@media only screen and (max-width: 767px){
+	body{
+		background-image: url("../images/background2.png");
+			width: auto;
+			height: auto;
+			margin: 1px;
+			padding: 10px;
+		}
+		}
+
+/*portraint phones*/
+@media only screen(max-width: 767px) and (orientation: portrait){
+	body{
+		background-image: url("../images/background2.png");
+			width: auto;
+			height: auto;
+			margin: 1px;
+			padding: 10px;
+	}
+	

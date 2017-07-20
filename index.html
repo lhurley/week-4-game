@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dragon Egg Collectors</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/gamestyle.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CDN -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	
+</head>
+<body>
+
+<!-- container & wrap -->
+<div id="container-fluid">
+<div id = "wrapper">
+
+<!-- Modal -->
+<div class="container">
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">How to Play</button>
+  
+  <!-- Modal content-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title"><b>Help Daenerys' gather the chosen number of dragon eggs she needs to start her army.</b></h3>
+        </div>
+        <div class="modal-body">
+          			<ul style="list-style-type:circle">
+						<li>By clicking on an egg you will add a specific amount of points to your total score.</li>
+						<li>But watch out! Each of the four dragon eggs below is set to a different value.</li>
+						<li>You win the game by matching your total score to the random number.</li> 
+						<li>You lose the game if your total score goes above the random number.</li>
+						<li>All values will reset at the start of each game.</li>
+					</ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- Your Guess / Needed # -->
+<div class = "container">
+	<div id="guessingNumber">
+		<h2>Number Needed: <span class="value"></span></h2> 	
+		</div>
+
+			<!-- scoreboard -->
+			<div id="scoreboard">
+				<h3><span id="status"></span></h3>
+				<h3>Wins: <span id="win"></span></h3>
+				<h3>Losses: <span id="loss"></span> </h3>
+			</div>
+		</div>
+
+<!-- your score -->
+<div id ="totalScore">
+	<h2 id = "yts">Total Score: <span id ="yourScore">0</span></h2>
+	</div>
+</div>
+
+<!-- base images -->
+<div id="dragonEggs" class="img-responsive center-block">
+</div>
+
+<!-- motion images -->
+<div class="imgoverlay">
+<img id="img1" src="assets/images/DragonEgg1.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
+<img id="img2" src="assets/images/DragonEgg2.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
+<img id="img3" src="assets/images/DragonEgg3.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
+<img id="img4" src="assets/images/DragonEgg4.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
+</div>
+
+<!-- page controllers -->
+<a href="index.html" class = "btn-default btn pull-right">New Game</a>
+<a href="start.html" class = "btn-default btn pull-right">Back</a>
+
+<!-- adding jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+</div>
+
+</body>
+</html>
