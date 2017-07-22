@@ -68,39 +68,45 @@
 
 
 <!-- Game Meters -->
-<!-- Your Guess / Needed # -->
 
 <div class = "container center-block">
 <div class="row-fluid">
+
+<!-- Your Guess / Needed # -->
 <div class="col-md-4">
-<div class="panel panel-default number">	
-<div id="guessingNumber">
-		<h2>Number Needed:</h2> <h3><span class="value"></span></h3> 	
-		</div>
-		</div>
-		</div>
-
-		<!-- your score -->
-		<div class="col-md-4">
-		<div class="panel panel-default yours">
-		<div id ="totalScore">
-			<h2 id = "yourTotalScore">Total Score:</h2> <h3><span id ="yourScore">0</span></h3>
-			</div>
-		</div>
-		</div>
-		
-
-		<!-- scoreboard -->
-		<div class="col-md-4">
-		<div class="panel panel-default score">
-		<div id="scoreboard" class="center-block">
-			<h3><span id="status"></span></h3>
-			<h3>Wins: <span id="win"></span>
-			&nbsp;&nbsp;Losses: <span id="loss"></span></h3>
-		</div>
-		</div>
+	<div class="panel panel-default number">	
+		<div id="guessingNumber">
+			<h2>Number Needed:</h2> 
+			<h1><span class="value"></span></h1> 	
 		</div>
 	</div>
+</div>
+
+<!-- your score -->
+<div class="col-md-4">
+	<div class="panel panel-default yours">
+		<div id ="totalScore">
+			<h2>Collected Eggs:</h2> 
+			<h1><span id ="yourScore">0</span></h1>
+		</div>
+	</div>
+</div>
+		
+
+<!-- scoreboard -->
+<div class="col-md-4">
+	<div class="panel panel-default score">
+		<div id="scoreboard" class="center-block">
+			<h4><span id="status"></span></h4>
+			<hr>
+			<div class="score">
+			<h3>Wins: <span id="win"></span></h3>
+			<h3>Losses: <span id="loss"></span></h3>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 </div>
 
 <!-- adding jQuery -->

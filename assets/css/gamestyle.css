@@ -2,6 +2,7 @@
 * {
   border-radius: 0 !important;
   border: none;
+  font-family: helvetica;
 }
 
 #container-fluid {
@@ -28,9 +29,10 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-	padding-right: 3em;
-	padding-left: 3em;
+	padding-right: 2em;
+	padding-left: 2em;
 	color: black;
+	padding-bottom:0;
 }
 
 .navbar .navbar-nav {
@@ -44,7 +46,7 @@ body {
 }
 
 .navbar ul li {
-border-right: 3px solid #000;
+border-right: 3.5px solid #000;
 }
 
 .navbar ul li:last-of-type {
@@ -67,15 +69,46 @@ border-right: none;
 	position:absolute;
 	bottom: -30em;
 	margin-bottom: 0;
+	text-align: center;
+}
+
+.panel h2 {
+	font-size: 12pt;
+	margin-bottom: 2em;
+	color: black;
+}
+
+.panel h1 span{
+	font-size: 100pt;
+	color: black;
+}
+
+
+.panel h3 {
+	font-size: 12pt;
+	color: black;
+	margin-left: 5.5em;
+	border-bottom: 3.5px solid #000;
+
+}
+
+.panel .score {
+	padding-top: 1em;
+	position: absolute;
+}
+
+.panel hr {
+	border: 2.5px solid #000;
+}
+
+.panel h4 span {
+	font-size: 20pt;
+	color: #f9323c;
 }
 
 .row-fluid .equal {  
     display: -webkit-flex;
     display: flex;
-}
-
-h3 {
-	font-size: 40pt;
 }
 
 /* dragonEgg images */
