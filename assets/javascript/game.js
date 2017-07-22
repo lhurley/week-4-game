@@ -39,6 +39,7 @@ $(document).ready(function() {
 		}
 	}
 
+$('.eggImage').css('cursor', 'pointer');
 
 	function onHover () {
 		$(".eggImage").on("mouseover", function(){
@@ -96,6 +97,48 @@ $(document).ready(function() {
 
 		$('.eggImage').on('click', function(){
 		    counter = counter + parseInt($(this).data('num'));
+
+$('.eggImage').css('cursor', 'pointer');
+
+	function onHover () {
+		$(".eggImage").on("mouseover", function(){
+			console.log("You're hovering");
+			if ($(this).hasClass("egg1")) {
+				$(this).attr('src', 'assets/images/DragonEgg1.gif');	
+			}
+			if ($(this).hasClass("egg2")) {
+				$(this).attr('src', 'assets/images/DragonEgg2.gif');	
+			}
+			if ($(this).hasClass("egg3")) {
+				$(this).attr('src', 'assets/images/DragonEgg3.gif');	
+			}
+			if ($(this).hasClass("egg4")) {
+				$(this).attr('src', 'assets/images/DragonEgg4.gif');	
+			}
+		});
+	}
+	onHover();
+
+
+	function endHover () {
+		$(".eggImage").on("mouseout", function(){
+			console.log("You're done hovering");
+			if ($(this).hasClass("egg1")) {
+				$(this).attr('src', 'assets/images/DragonEgg1Start.png');	
+			}
+			if ($(this).hasClass("egg2")) {
+				$(this).attr('src', 'assets/images/DragonEgg2Start.png');	
+			}
+			if ($(this).hasClass("egg3")) {
+				$(this).attr('src', 'assets/images/DragonEgg3Start.png');	
+			}
+			if ($(this).hasClass("egg4")) {
+				$(this).attr('src', 'assets/images/DragonEgg4Start.png');	
+			}
+		});
+	}
+	endHover();
+
 		   
 		    $('#yourScore').text(counter);
 

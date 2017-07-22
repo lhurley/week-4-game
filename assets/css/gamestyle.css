@@ -1,4 +1,9 @@
 /* page layout1 */
+* {
+  border-radius: 0 !important;
+  border: none;
+}
+
 #container-fluid {
 	padding-left: 25%;
 	padding-top: 2%;
@@ -10,42 +15,67 @@ body {
 	background-size: 200%;
 }
 
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:10px !important; 
+    padding-bottom:0 !important;
+    height: 40px;
+}
+.navbar {min-height:40px !important;}
+
+.navbar-outer {
+  width:439px;
+  height: 15em;
+}
+
+.navbar-default .navbar-nav>li>a {
+	padding-right: 3em;
+	padding-left: 3em;
+	color: black;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    background-color: white;
+}
+
+.navbar ul li {
+border-right: 3px solid #000;
+}
+
+.navbar ul li:last-of-type {
+border-right: none;
+}
+
+.modal-body li {
+	line-height: 2em;
+}
+
 .controllers {
 	margin-right: 40em;
 	width: 4em;
 }
 
 /* Number to Guess/Guesses/Scoreboard */
-#guessingNumber {
-	background-color: white;
-	border: solid 3px;
-	border-color: black;
-	float: left;
-	display: inline-block;
-	padding: 40px;
-	margin-top: 20px;
+.panel {
+	width: 18em;
+	height: 18em;
+	position:absolute;
+	bottom: -30em;
+	margin-bottom: 0;
 }
 
-#scoreboard {
-	background-color: #f9323c;
-	display: inline-block;
-	padding: 10px;
-	margin-top: 20px;
-	margin-left: 20px;
-	width: 17em;
-	height: 10em;
+.row-fluid .equal {  
+    display: -webkit-flex;
+    display: flex;
 }
 
-#totalScore {
-	margin-bottom: 50px;
-}
-
-#yourTotalScore {
-	background-color: white;
-	border: solid 2px;
-	border-color: black;
-	display: inline;
-	padding: 20px;
+h3 {
+	font-size: 40pt;
 }
 
 /* dragonEgg images */
