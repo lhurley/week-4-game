@@ -1,10 +1,10 @@
 $(document).ready(function() {
 //global variables
-	dragonEggs = ['assets/images/DragonEgg1Start.png','assets/images/DragonEgg2Start.png','assets/images/DragonEgg3Start.png','assets/images/DragonEgg4Start.png'];
 
 	var counter = 0;
 	var wins = 0;
 	var losses = 0;
+
 	//determining win and loss counter
 	$('#win').text(wins);
 	$('#loss').text(losses);
@@ -15,8 +15,8 @@ $(document).ready(function() {
 		var numbers = []
 			while(numbers.length < 4){
 				//Math.ceil will round the number in to an integer
-				//here we will going to determine the random number 
-				//this number is the wining number if the user gusse correctly
+				//determine the random number 
+				//this number is the wining number if the user guesses correctly
 			  var randomNumber = Math.ceil(Math.random()*15)
 			  var found = false;
 			  for (var i=0; i< numbers.length; i++){
@@ -26,16 +26,59 @@ $(document).ready(function() {
 			  }
 			  if(!found)numbers[numbers.length]=randomNumber;
 			}
+
 		//console.log(newEggs);		
 		for (i = 0; i < numbers.length; i++) {
 			var imageEgg = $('<img>');
 			imageEgg.attr('data-num', numbers[i]);
-			imageEgg.attr('src', dragonEggs[i]);
 			imageEgg.attr('alt', 'dragonEggs');
-			imageEgg.addClass('eggImage')
+			imageEgg.attr('src', 'assets/images/DragonEgg'+ (i+1) +'Start.png');
+			imageEgg.addClass('eggImage');
+			imageEgg.addClass('egg' + (i+1)); // egg1, egg2
 			$('#dragonEggs').append(imageEgg);
 		}
 	}
+
+
+	function onHover () {
+		$(".eggImage").on("mouseover", function(){
+			console.log("You're hovering");
+			if ($(this).hasClass("egg1")) {
+				$(this).attr('src', 'assets/images/DragonEgg1.gif');	
+			}
+			if ($(this).hasClass("egg2")) {
+				$(this).attr('src', 'assets/images/DragonEgg2.gif');	
+			}
+			if ($(this).hasClass("egg3")) {
+				$(this).attr('src', 'assets/images/DragonEgg3.gif');	
+			}
+			if ($(this).hasClass("egg4")) {
+				$(this).attr('src', 'assets/images/DragonEgg4.gif');	
+			}
+		});
+	}
+	onHover();
+
+
+	function endHover () {
+		$(".eggImage").on("mouseout", function(){
+			console.log("You're done hovering");
+			if ($(this).hasClass("egg1")) {
+				$(this).attr('src', 'assets/images/DragonEgg1Start.png');	
+			}
+			if ($(this).hasClass("egg2")) {
+				$(this).attr('src', 'assets/images/DragonEgg2Start.png');	
+			}
+			if ($(this).hasClass("egg3")) {
+				$(this).attr('src', 'assets/images/DragonEgg3Start.png');	
+			}
+			if ($(this).hasClass("egg4")) {
+				$(this).attr('src', 'assets/images/DragonEgg4Start.png');	
+			}
+		});
+	}
+	endHover();
+
 
 	function newGame() {
 
@@ -55,7 +98,8 @@ $(document).ready(function() {
 		    counter = counter + parseInt($(this).data('num'));
 		   
 		    $('#yourScore').text(counter);
-//determine user's win 
+
+			//determine user's win 
 		    if (counter == numberToGuess){
 		      $('#status').text('You won!!!!');
 		      wins ++;
@@ -64,7 +108,8 @@ $(document).ready(function() {
 		      $('#dragonEggs').empty();
 		      newEggs();
 		      newGame();
-	//determine user losses	        
+			
+			//determine user losses	  
 		    } else if ( counter > numberToGuess){
 		        $('#status').text('You lost!');
 		        losses ++;

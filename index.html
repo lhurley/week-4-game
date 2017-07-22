@@ -10,13 +10,15 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!-- Bootstrap CDN -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	
@@ -24,16 +26,20 @@
 <body>
 
 <!-- container & wrap -->
-<div id="container-fluid">
-<div id = "wrapper">
+<div id="container-fluid center-block">
+<div class="row">
 
 <!-- Modal -->
-<div class="container">
+<div class="container center-block">
 
 <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">How to Play</button>
+<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">How to Play</button>
   
-  <!-- Modal content-->
+<!-- page controllers -->
+<a href="index.html" class = "btn-default btn center-block">New Game</a>
+<a href="start.html" class = "btn-default btn center-block">Back</a>  
+
+<!-- Modal content-->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -58,41 +64,32 @@
   </div>
 </div>
 
+<!-- base images -->
+<br><br><br><br><br>
+<div id="dragonEggs" class="center-block">
+</div>
+<br><br><br><br><br>
+
+<!-- Game Meters -->
 <!-- Your Guess / Needed # -->
-<div class = "container">
+<div class = "container center-block">
 	<div id="guessingNumber">
 		<h2>Number Needed: <span class="value"></span></h2> 	
 		</div>
 
-			<!-- scoreboard -->
-			<div id="scoreboard">
-				<h3><span id="status"></span></h3>
-				<h3>Wins: <span id="win"></span></h3>
-				<h3>Losses: <span id="loss"></span> </h3>
+		<!-- your score -->
+		<div id ="totalScore">
+			<h2 id = "yourTotalScore">Total Score: <span id ="yourScore">0</span></h2>
 			</div>
 		</div>
 
-<!-- your score -->
-<div id ="totalScore">
-	<h2 id = "yts">Total Score: <span id ="yourScore">0</span></h2>
+		<!-- scoreboard -->
+		<div id="scoreboard" class="center-block">
+			<h3><span id="status"></span></h3>
+			<h3>Wins: <span id="win"></span>
+			&nbsp;&nbsp;Losses: <span id="loss"></span></h3>
+		</div>
 	</div>
-</div>
-
-<!-- base images -->
-<div id="dragonEggs" class="img-responsive center-block">
-</div>
-
-<!-- motion images -->
-<div class="imgoverlay">
-<img id="img1" src="assets/images/DragonEgg1.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
-<img id="img2" src="assets/images/DragonEgg2.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
-<img id="img3" src="assets/images/DragonEgg3.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
-<img id="img4" src="assets/images/DragonEgg4.gif" alt="gamestart" class="img-responsive center-block" style="width:100pt;">
-</div>
-
-<!-- page controllers -->
-<a href="index.html" class = "btn-default btn pull-right">New Game</a>
-<a href="start.html" class = "btn-default btn pull-right">Back</a>
 
 <!-- adding jQuery -->
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>

@@ -10,6 +10,11 @@ body {
 	background-size: 200%;
 }
 
+.controllers {
+	margin-right: 40em;
+	width: 4em;
+}
+
 /* Number to Guess/Guesses/Scoreboard */
 #guessingNumber {
 	background-color: white;
@@ -17,24 +22,25 @@ body {
 	border-color: black;
 	float: left;
 	display: inline-block;
-	padding: 10px;
+	padding: 40px;
 	margin-top: 20px;
 }
 
 #scoreboard {
 	background-color: #f9323c;
 	display: inline-block;
-	padding: 15px 20px 10px 15px;
+	padding: 10px;
 	margin-top: 20px;
 	margin-left: 20px;
+	width: 17em;
+	height: 10em;
 }
-
 
 #totalScore {
 	margin-bottom: 50px;
 }
 
-#yts {
+#yourTotalScore {
 	background-color: white;
 	border: solid 2px;
 	border-color: black;
@@ -43,59 +49,14 @@ body {
 }
 
 /* dragonEgg images */
-#dragonEggs {
-	position: fixed;
-	bottom:0;
-	top:0;
-	left:40em;
-	right:0;
-}
-
 img{
-	width: 100pt;
+	width: 150pt;
 }
 
-.imgoverlay {
-    position: relative;
-    max-width: 900px;
-}
-
-#img4 {
-	position: fixed;
-	bottom:0;
-	top:0;
-	left:0;
-	right:0;
-}
-
-#img3{
-    position: fixed;
-    bottom: 0;
-    top:0;
-    left:0;
-	right:0;
-}
-
-#img2 {
-    position: fixed;
-    bottom: 0;
-    top:0;
-    left:0;
-	right:0;
-}
-
-#img1 {
-	position: fixed;
-    bottom: 0;
-    top:0;
-    left:0;
-	right:0;
-}
 
 .center-block {
-	margin-top: 20em;
     position: relative;
-    max-width: 500px;
+    max-width: 800px;
 }
 
 /*Targeting Tablets and desktop*/
